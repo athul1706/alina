@@ -91,8 +91,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("✨ INFAME SERIES ✨", url="https://t.me/InfameSeries"),
                 ]
             ]
         )
@@ -157,7 +156,7 @@ async def subscribers_count(bot, m: Message):
     await msg.edit(USERS_LIST.format(active, blocked))
 
 
-@Bot.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS))
+@Bot.on_message(filters.private & filters.command('send') & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
         query = await query_msg()
