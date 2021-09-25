@@ -148,6 +148,7 @@ async def subscribers_count(bot, m: Message):
     id = m.from_user.id
     if id not in ADMINS:
         return
+    USERS_LIST = "<b>Total:</b>\n\nSubscribers - {}\nBlocked / Deleted - {}"
     msg = await m.reply_text(WAIT_MSG)
     messages = await users_info(bot)
     active = messages[0]
