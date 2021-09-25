@@ -26,7 +26,6 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
     user_name = '@' + message.from_user.username if message.from_user.username else None
-    await add_user(id, user_name)
     text = message.text
     if len(text)>7:
         try:
