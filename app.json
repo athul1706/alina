@@ -1,13 +1,11 @@
 {
-  "name": "TG File Sharing Bot",
-  "description": "file sharing bot store posts and it can access by special links",
+  "name": "TG Bot",
+  "description": "tg bot",
   "keywords": [
     "telegram",
-    "file",
-    "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
-  "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
+  "repository": 'https://github.com/athul1706/alina',
+
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
